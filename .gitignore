@@ -1,0 +1,17 @@
+### IntelliJ IDEA ###
+.idea/
+out/
+
+### Java ###
+*.class
+*.log
+
+### Build tools ###
+target/
+build/
+
+### OS ###
+.DS_Store
+
+### VS Code ###
+.vscode/
