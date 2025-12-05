@@ -6,12 +6,15 @@ import Mi_Platzi_Project.Contenido.Pelicula;
 
 
 public class Main {
-    static void main() {
-        Pelicula p1 = new Pelicula();
+    static void main(String[] args) {
+        /*Pelicula p1 = new Pelicula();
         p1.setTitulo("Halo");
         p1.setYear("2002");
         p1.setDisponible();
         p1.calificar(5);
+        System.out.println(p1.obtener());*/ //Forma de hacerlo sin constructor
+        Pelicula p1 = new Pelicula("Halo", "2002", "Accion");
+        p1.setDisponible(true);
         System.out.println(p1.obtener());
 
         /*The Scanner class can be used to obtain data from the keyboard, files and strings.*/

@@ -1,7 +1,5 @@
 package Mi_Platzi_Project.Contenido;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Pelicula {
     //Atributos
     private String titulo;
@@ -33,8 +31,8 @@ public class Pelicula {
     public void setYear(String newYear){
         this.year = newYear;
     }
-    public void setDisponible(){
-        this.disponible = disponible;
+    public void setDisponible(boolean b){
+        this.disponible = b;
     }
 
     //Metodos
@@ -50,11 +48,21 @@ public class Pelicula {
         }
 
     }
+
+    //CONSTRUCTOR
+    public Pelicula(String titulo, String year, String genero) {
+
+    }
+
+
     public boolean esPopular(){
         return calificacion >= 4;
     }
+
 }
 
 
 //COMENTARIOS
 //El color lila hace referencia a que se esta mencionando el atributo de la clase y el blanco como tal a la variable que se esta usando en la funcion
+
+//Pendiente crear un constructor y agregar el resto de cosas que el "Jefe solicito"> https://chatgpt.com/c/69332988-09f0-832f-b9be-dcbee08bc81d
