@@ -48,11 +48,14 @@ public class Pelicula {
         }
 
     }
+    public String agregarResena(String texto){
+        return texto;
+    }
 
     //CONSTRUCTOR
     public Pelicula(String titulo, String year, String genero) {
-
     }
+
 
 
     public boolean esPopular(){
