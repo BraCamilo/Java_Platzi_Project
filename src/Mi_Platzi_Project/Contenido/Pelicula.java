@@ -48,12 +48,15 @@ public class Pelicula {
         }
 
     }
-    public String agregarResena(String texto){
-        return texto;
+    public void agregarResena(String texto){
+        System.out.println("Nueva reseña para: " + this.titulo + ": " + texto);
     }
 
     //CONSTRUCTOR
     public Pelicula(String titulo, String year, String genero) {
+        this.titulo = titulo;
+        this.year = year;
+        this.genero = genero;
     }
 
 
