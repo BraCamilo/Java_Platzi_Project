@@ -2,17 +2,19 @@ package Mi_Platzi_Project;
 
 import Mi_Platzi_Project.Contenido.Pelicula;
 
-
+import java.time.LocalDate;
 
 
 public class Main {
     static void main() {
         Pelicula p1 = new Pelicula();
         p1.setTitulo("Halo");
-        p1.setYear("2002");
-        p1.setDisponible();
+        p1.setDisponible(true);
         p1.calificar(5);
+        p1.setFechaEstreno(LocalDate.of(2005, 02,15));
         System.out.println(p1.obtener());
+
+
 
         /*The Scanner class can be used to obtain data from the keyboard, files and strings.*/
        /* Scanner scanner = new Scanner(System.in);
