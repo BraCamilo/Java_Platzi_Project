@@ -13,6 +13,7 @@ public class Pelicula {
     private LocalDate fechaEstreno;
 
 
+
     //Getters
     public String getTitulo(){
         return titulo;
@@ -31,7 +32,7 @@ public class Pelicula {
     public void setTitulo(String newTitulo){
         this.titulo = newTitulo;
     }
-    public void setDisponible(){
+    public void setDisponible(boolean b){
         this.disponible = disponible;
     }
     public void setFechaEstreno(LocalDate localDate){
