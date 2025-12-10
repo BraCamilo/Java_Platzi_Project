@@ -2,23 +2,25 @@ package Mi_Platzi_Project.Contenido;
 
 import org.w3c.dom.ls.LSOutput;
 
+import java.time.LocalDate;
+import java.util.Date;
+
 public class Pelicula {
     //Atributos
     private String titulo;
     private String descripcion;
     private String duracion;
     private String genero;
-    private String year;
     private double calificacion;
     private boolean disponible;
+    private LocalDate fechaEstreno;
+
 
     //Getters
     public String getTitulo(){
         return titulo;
     }
-    public String getYear(){
-        return year;
-    }
+    
     public double getCalificacion(){
         return calificacion;
     }
@@ -30,9 +32,6 @@ public class Pelicula {
     public void setTitulo(String newTitulo){
         this.titulo = newTitulo;
     }
-    public void setYear(String newYear){
-        this.year = newYear;
-    }
     public void setDisponible(){
         this.disponible = disponible;
     }
@@ -42,7 +41,7 @@ public class Pelicula {
         System.out.println("Reproduciendo "+ titulo);
     }
     public String obtener(){
-        return "El titulo de la pelicula es: "+ getTitulo()+"\nEl ano de estreno es: " + getYear() + "\nDispobinilidad: " + getDisponible() +"\nY su actual calificacion es: " + getCalificacion();
+        return "El titulo de la pelicula es: "+ getTitulo()+"\nEl ano de estreno es: " + "\nDispobinilidad: " + getDisponible() +"\nY su actual calificacion es: " + getCalificacion();
     }
     public void calificar(double calificacion) {
         if (calificacion >= 0 && calificacion <= 5){
