@@ -4,6 +4,7 @@ import Mi_Platzi_Project.Contenido.Pelicula;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
 public class Main {
@@ -17,7 +18,10 @@ public class Main {
 
         usuario user1 = new usuario();
         user1.setFechaRegistro(LocalDateTime.now());
+        DateTimeFormatter formate = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        String fechaFormateada = user1.getFechaRegistro().format(formate);
         System.out.println(user1.getFechaRegistro());
+        System.out.println(fechaFormateada);
 
 
         /*The Scanner class can be used to obtain data from the keyboard, files and strings.*/
