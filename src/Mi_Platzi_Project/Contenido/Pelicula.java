@@ -33,7 +33,7 @@ public class Pelicula {
         this.titulo = newTitulo;
     }
     public void setDisponible(boolean b){
-        this.disponible = disponible;
+        this.disponible = b;
     }
     public void setFechaEstreno(LocalDate localDate){
         this.fechaEstreno = fechaEstreno;
@@ -44,7 +44,7 @@ public class Pelicula {
         System.out.println("Reproduciendo "+ titulo);
     }
     public String obtener(){
-        return "El titulo de la pelicula es: "+ getTitulo()+"\nEl ano de estreno es: " + getFechaEstreno() + "\nDispobinilidad: " + getDisponible() +"\nY su actual calificacion es: " + getCalificacion();
+        return "El titulo de la pelicula es: "+ getTitulo() + "\nDispobinilidad: " + getDisponible() +"\nY su actual calificacion es: " + getCalificacion();
     }
     public void calificar(double calificacion) {
         if (calificacion >= 0 && calificacion <= 5){

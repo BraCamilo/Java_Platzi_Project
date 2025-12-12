@@ -16,12 +16,11 @@ public class Main {
         p1.setFechaEstreno(LocalDate.of(2005, 10,15));
         System.out.println(p1.obtener());
 
-        usuario user1 = new usuario();
-        user1.setFechaRegistro(LocalDateTime.now());
-        DateTimeFormatter formate = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-        String fechaFormateada = user1.getFechaRegistro().format(formate);
-        System.out.println(user1.getFechaRegistro());
-        System.out.println(fechaFormateada);
+        usuario user1 = new usuario("BraCamilo", "Brayan");
+        System.out.println(user1);
+
+
+
 
 
         /*The Scanner class can be used to obtain data from the keyboard, files and strings.*/
