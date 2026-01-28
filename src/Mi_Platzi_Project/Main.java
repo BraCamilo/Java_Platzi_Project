@@ -8,32 +8,6 @@ import java.time.format.DateTimeFormatter;
 
 
 public class Main {
-    static void main() {
-        Pelicula p1 = new Pelicula();
-        p1.setTitulo("Halo");
-        p1.setDisponible(true);
-        p1.calificar(5);
-        p1.setFechaEstreno(LocalDate.of(2005, 10,15));
-        System.out.println(p1.obtener());
+    static void main() {}
 
-        usuario user1 = new usuario("BraCamilo", "Brayan");
-        System.out.println(user1);
-
-
-
-
-
-        /*The Scanner class can be used to obtain data from the keyboard, files and strings.*/
-       /* Scanner scanner = new Scanner(System.in);
-        System.out.println("¿Cuál es tu nombre?");
-
-        String nombre = scanner.nextLine();
-        System.out.println("Hola "+ nombre + " bienvenido a Java");
-
-        System.out.println(nombre + " ¿Cuántos años tienes?");
-        int edad = scanner.nextInt();
-
-        System.out.println(nombre +" tu edad, que es: "+edad+", permite que aprendas Java");*/
-
-    }
 }
